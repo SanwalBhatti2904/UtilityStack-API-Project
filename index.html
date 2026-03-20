@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UtilityStack · Your Ultimate API Playground</title>
+
+  <!-- ======================== Favicon items====================================== -->
+  <link rel="icon" type="image/png" href="./assets/icons/favicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="image/svg+xml" href="./assets/icons/favicon.svg" />
+  <link rel="shortcut icon" href="./assets/icons/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="./assets/icons/apple-touch-icon.png" />
+  <meta name="apple-mobile-web-app-title" content="UtilityStack" />
+  <link rel="manifest" href="/site.webmanifest" />
+  <!-- =============================================================================== -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,600;14..32,700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/animations.css">
+  <link rel="stylesheet" href="./css/media-queries.css">
+</head>
+
+<body>
+  <!-- Header (same for all pages) -->
+  <header>
+    <div class="container header-flex">
+      <div class="logo">
+        <a href="index.html"><i class="fas fa-wave-square"></i><span>UtilityStack</span></a>
+      </div>
+      <nav class="main-nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li class="dropdown">
+            <a href="#" class="dropbtn">Features <i class="fas fa-chevron-down"></i></a>
+            <div class="dropdown-content">
+              <a href="./pages/weather.html"><i class="fas fa-cloud-sun"></i> Weather</a>
+              <a href="./pages/cat.html"><i class="fas fa-cat"></i> Random Cat</a>
+              <a href="./pages/dictionary.html"><i class="fas fa-book"></i> Dictionary</a>
+              <a href="./pages/joke.html"><i class="fas fa-laugh"></i> Jokes</a>
+              <a href="./pages/currency.html"><i class="fas fa-coins"></i> Currency</a>
+              <a href="./pages/posts.html"><i class="fas fa-newspaper"></i> Fake Posts</a>
+            </div>
+          </li>
+          <li><a href="./pages/services.html">Services</a></li>
+          <li><a href="./pages/contact.html">Contact</a></li>
+          <li><a href="./pages/newsletter.html">Newsletter</a></li>
+        </ul>
+      </nav>
+      <div class="search-container">
+        <form id="search-form">
+          <input type="text" id="search-input" placeholder="Search features or Wikipedia..." aria-label="Search">
+          <select id="search-source">
+            <option value="site">Site</option>
+            <option value="wikipedia">Wikipedia</option>
+          </select>
+          <button type="submit"><i class="fas fa-search"></i></button>
+        </form>
+      </div>
+      <button id="theme-toggle" aria-label="Switch between dark and light mode">
+        <i class="fas fa-sun"></i><i class="fas fa-moon"></i>
+      </button>
+      <button class="mobile-menu-btn" id="mobile-menu-btn"><i class="fas fa-bars"></i></button>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section with background image -->
+    <section class="hero" style="background-image: url('assets/images/hero-bg.jpg');">
+      <div class="container glass-card">
+        <h1>Explore the Power of <span class="accent">APIs</span></h1>
+        <p>Six interactive tools – weather, cats, dictionary, jokes, currency, and fake posts. All in one place, with a
+          beautiful glassy interface.</p>
+        <a href="#features" class="btn-primary"><i class="fas fa-arrow-down"></i> Discover Features</a>
+      </div>
+    </section>
+
+    <!-- Features Section (cards) – unchanged -->
+    <section id="features" class="features-section">
+      <div class="container">
+        <h2 class="section-title">Our Toolbox</h2>
+        <p class="section-subtitle">Click any card to start using the API immediately.</p>
+        <div class="card-grid">
+          <!-- Weather Card -->
+          <div class="card">
+            <div class="card-icon"><i class="fas fa-cloud-sun"></i></div>
+            <h3>Current Weather</h3>
+            <p>Real‑time weather for any city using OpenWeatherMap.</p>
+            <a href="./pages/weather.html" class="card-btn">Try it <i class="fas fa-arrow-right"></i></a>
+          </div>
+          <!-- Cat Card -->
+          <div class="card">
+            <div class="card-icon"><i class="fas fa-cat"></i></div>
+            <h3>Random Cat</h3>
+            <p>Instantly get a cute cat image from The Cat API.</p>
+            <a href="./pages/cat.html" class="card-btn">Try it <i class="fas fa-arrow-right"></i></a>
+          </div>
+          <!-- Dictionary Card -->
+          <div class="card">
+            <div class="card-icon"><i class="fas fa-book-open"></i></div>
+            <h3>Dictionary</h3>
+            <p>Look up definitions, phonetics and examples.</p>
+            <a href="./pages/dictionary.html" class="card-btn">Try it <i class="fas fa-arrow-right"></i></a>
+          </div>
+          <!-- Joke Card -->
+          <div class="card">
+            <div class="card-icon"><i class="fas fa-laugh-squint"></i></div>
+            <h3>Programming Jokes</h3>
+            <p>Get a random programming joke (single or two‑part).</p>
+            <a href="./pages/joke.html" class="card-btn">Try it <i class="fas fa-arrow-right"></i></a>
+          </div>
+          <!-- Currency Card -->
+          <div class="card">
+            <div class="card-icon"><i class="fas fa-coins"></i></div>
+            <h3>Currency Converter</h3>
+            <p>Convert between world currencies with live rates.</p>
+            <a href="./pages/currency.html" class="card-btn">Try it <i class="fas fa-arrow-right"></i></a>
+          </div>
+          <!-- Posts Card -->
+          <div class="card">
+            <div class="card-icon"><i class="fas fa-newspaper"></i></div>
+            <h3>Fake Posts</h3>
+            <p>Sample blog feed from JSONPlaceholder.</p>
+            <a href="./pages/posts.html" class="card-btn">Try it <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- NEW: Fun Facts About APIs (with background image) -->
+    <section class="facts-section" style="background-image: url('assets/images/facts-bg.jpg');">
+      <div class="container">
+        <h2 class="section-title">📡 Fun Facts About APIs</h2>
+        <div class="facts-grid">
+          <div class="fact-card glass-card">
+            <i class="fas fa-cloud"></i>
+            <h3>1. API = Application Programming Interface</h3>
+            <p>APIs allow different software applications to communicate with each other. They're like waiters in a
+              restaurant – they take your order (request) and bring back food (data).</p>
+          </div>
+          <div class="fact-card glass-card">
+            <i class="fas fa-chart-line"></i>
+            <h3>2. Over 24,000 public APIs exist</h3>
+            <p>According to ProgrammableWeb, there are more than 24,000 public APIs available – and we've picked six of
+              the most fun and useful ones for you!</p>
+          </div>
+          <div class="fact-card glass-card">
+            <i class="fas fa-clock"></i>
+            <h3>3. The first API was created in 2000</h3>
+            <p>Salesforce launched the first modern web API in 2000. Today, APIs power everything from mobile apps to
+              smart homes.</p>
+          </div>
+          <div class="fact-card glass-card">
+            <i class="fas fa-globe"></i>
+            <h3>4. Google's public APIs handle billions of requests daily</h3>
+            <p>Maps, YouTube, and Search all rely on APIs. Without them, the internet as we know it wouldn't exist.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- NEW: Featured Tool Spotlight (instead of CTA) -->
+    <section class="spotlight-section">
+      <div class="container">
+        <div class="spotlight-card glass-card">
+          <h2><i class="fas fa-star"></i> Tool of the Week: Dictionary</h2>
+          <p>Expand your vocabulary with our dictionary tool – just type any word and get instant definitions,
+            phonetics, and examples. Perfect for writers, students, and curious minds.</p>
+          <a href="./pages/dictionary.html" class="btn-primary">Try Dictionary Now <i
+              class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- NEW: Enhanced Footer (same on all pages) -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-about">
+          <h3>UtilityStack</h3>
+          <p>A curated collection of six free and fun APIs, wrapped in a modern glass interface. Built for learning and
+            experimentation.</p>
+          <div class="social-links">
+            <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+          </div>
+        </div>
+        <div class="footer-links">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="./pages/weather.html">Weather</a></li>
+            <li><a href="./pages/cat.html">Random Cat</a></li>
+            <li><a href="./pages/dictionary.html">Dictionary</a></li>
+            <li><a href="./pages/joke.html">Jokes</a></li>
+            <li><a href="./pages/currency.html">Currency</a></li>
+            <li><a href="./pages/posts.html">Fake Posts</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h3>Information</h3>
+          <ul>
+            <li><a href="./pages/services.html">Services</a></li>
+            <li><a href="./pages/contact.html">Contact</a></li>
+            <li><a href="./pages/newsletter.html">Newsletter</a></li>
+            <li><a href="./pages/privacy-policy.html">Privacy Policy</a></li>
+            <li><a href="./pages/terms-use.html">Terms of Use</a></li>
+          </ul>
+        </div>
+        <div class="footer-newsletter">
+          <h3>Stay Updated</h3>
+          <p>Subscribe to our newsletter for new tools and API tips.</p>
+          <form id="footer-newsletter-form">
+            <input type="email" placeholder="Your email address" required>
+            <button type="submit"><i class="fas fa-paper-plane"></i></button>
+          </form>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 API Toolbox. All rights reserved. Built with <i class="fas fa-heart" style="color: #6D2411;"></i>
+          using free APIs.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/config.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>

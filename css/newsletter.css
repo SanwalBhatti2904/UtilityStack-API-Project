@@ -1,0 +1,20 @@
+/* Newsletter page */
+.newsletter-form {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.newsletter-form .input-group {
+  margin-bottom: 1rem;
+}
+
+.form-note {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  opacity: 0.7;
+  text-align: center;
+}
+
+#newsletter-message {
+  margin-top: 1rem;
+}

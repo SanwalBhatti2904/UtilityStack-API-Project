@@ -1,0 +1,54 @@
+/* Services page list */
+.services-list {
+  margin-top: 2rem;
+}
+
+.service-item {
+  display: flex;
+  gap: 1rem;
+  padding: 1rem 0;
+  border-bottom: 1px solid var(--glass-border);
+}
+
+.service-item:last-child {
+  border-bottom: none;
+}
+
+.service-item i {
+  font-size: 2rem;
+  color: var(--primary);
+  min-width: 3rem;
+  text-align: center;
+}
+
+.service-item h3 {
+  margin-bottom: 0.25rem;
+  font-size: 1.3rem;
+}
+
+.service-item p {
+  opacity: 0.8;
+  margin-bottom: 0.25rem;
+}
+
+.service-link {
+  color: var(--primary);
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.2s;
+}
+
+.service-link:hover {
+  color: var(--primary-dark);
+  text-decoration: underline;
+}
+
+/* Privacy policy note */
+.policy-note {
+  margin-top: 2rem;
+  padding: 1rem;
+  background: var(--glass-bg);
+  border-radius: 8px;
+  font-style: italic;
+  opacity: 0.9;
+}

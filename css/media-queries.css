@@ -1,0 +1,25 @@
+/* css/media-queries.css */
+@media (max-width: 768px) {
+  .container {
+    padding: 1rem;
+  }
+  header h1 {
+    font-size: 1.4rem;
+  }
+  .card-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  .feature-card {
+    padding: 1.5rem;
+  }
+  .input-group {
+    flex-direction: column;
+  }
+  .input-group input, .input-group select, .input-group button {
+    width: 100%;
+  }
+  .weather-extra {
+    grid-template-columns: 1fr;
+  }
+}

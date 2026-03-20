@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Newsletter · API Toolbox</title>
+
+    <!-- ======================== Favicon items====================================== -->
+  <link rel="icon" type="image/png" href="../assets/icons/favicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="image/svg+xml" href="../assets/icons/favicon.svg" />
+  <link rel="shortcut icon" href="../assets/icons/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="../assets/icons/apple-touch-icon.png" />
+  <meta name="apple-mobile-web-app-title" content="UtilityStack" />
+  <link rel="manifest" href="/site.webmanifest" />
+  <!-- =============================================================================== -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,600;14..32,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/animations.css">
+    <link rel="stylesheet" href="../css/media-queries.css">
+    <link rel="stylesheet" href="../css/newsletter.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container header-flex">
+            <div class="logo">
+                <a href="../index.html"><i class="fas fa-wave-square"></i>
+                    <span>UtilityStack</span></a>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropbtn">Features <i class="fas fa-chevron-down"></i></a>
+                        <div class="dropdown-content">
+                            <a href="weather.html"><i class="fas fa-cloud-sun"></i> Weather</a>
+                            <a href="cat.html"><i class="fas fa-cat"></i> Random Cat</a>
+                            <a href="dictionary.html"><i class="fas fa-book"></i> Dictionary</a>
+                            <a href="joke.html"><i class="fas fa-laugh"></i> Jokes</a>
+                            <a href="currency.html"><i class="fas fa-coins"></i> Currency</a>
+                            <a href="posts.html"><i class="fas fa-newspaper"></i> Fake Posts</a>
+                        </div>
+                    </li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="newsletter.html" class="active">Newsletter</a></li>
+                </ul>
+            </nav>
+            <div class="search-container">
+                <form id="search-form">
+                    <input type="text" id="search-input" placeholder="Search features or Wikipedia..."
+                        aria-label="Search">
+                    <select id="search-source">
+                        <option value="site">Site</option>
+                        <option value="wikipedia">Wikipedia</option>
+                    </select>
+                    <button type="submit"><i class="fas fa-search"></i></button>
+                </form>
+            </div>
+            <button id="theme-toggle" aria-label="Switch between dark and light mode">
+                <i class="fas fa-sun"></i><i class="fas fa-moon"></i>
+            </button>
+            <button class="mobile-menu-btn" id="mobile-menu-btn"><i class="fas fa-bars"></i></button>
+        </div>
+    </header>
+
+    <main class="feature-page">
+        <div class="container">
+            <div class="feature-header">
+                <h1><i class="fas fa-envelope-open-text"></i> Newsletter</h1>
+                <p>Stay up‑to‑date with new tools, API tips, and feature updates.</p>
+            </div>
+
+            <div class="feature-card">
+                <h2>Join Our Mailing List</h2>
+                <p>We send occasional emails (no spam, ever) about:</p>
+                <ul style="margin: 1rem 0 2rem 2rem;">
+                    <li>🆕 New API features and tools</li>
+                    <li>📚 Tutorials and best practices</li>
+                    <li>🔧 Maintenance announcements</li>
+                    <li>🎁 Exclusive beta access</li>
+                </ul>
+
+                <form id="newsletter-form" class="newsletter-form">
+                    <div class="input-group">
+                        <input type="text" id="newsletter-name" placeholder="Your name (optional)">
+                    </div>
+                    <div class="input-group">
+                        <input type="email" id="newsletter-email" placeholder="Your email address *" required>
+                    </div>
+                    <button type="submit" class="btn-primary"><i class="fas fa-paper-plane"></i> Subscribe</button>
+                </form>
+
+                <p class="form-note">We'll never share your email. Unsubscribe with one click.</p>
+                <div id="newsletter-message" class="form-message" style="display: none;"></div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <h3>API Toolbox</h3>
+                    <p>A curated collection of six free and fun APIs, wrapped in a modern glass interface. Built for
+                        learning and experimentation.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="weather.html">Weather</a></li>
+                        <li><a href="cat.html">Random Cat</a></li>
+                        <li><a href="dictionary.html">Dictionary</a></li>
+                        <li><a href="joke.html">Jokes</a></li>
+                        <li><a href="currency.html">Currency</a></li>
+                        <li><a href="posts.html">Fake Posts</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h3>Information</h3>
+                    <ul>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="newsletter.html">Newsletter</a></li>
+                        <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                        <li><a href="terms-use.html">Terms of Use</a></li>
+                    </ul>
+                </div>
+                <div class="footer-newsletter">
+                    <h3>Stay Updated</h3>
+                    <p>Subscribe to our newsletter for new tools and API tips.</p>
+                    <form id="footer-newsletter-form">
+                        <input type="email" placeholder="Your email address" required>
+                        <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2026 API Toolbox. All rights reserved. Built with <i class="fas fa-heart"
+                        style="color: #6D2411;"></i> using free APIs.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/config.js"></script>
+    <script src="../js/main.js"></script>
+    <script src="../js/newsletter.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,27 @@
+/* Cat image – fixed overflow issue */
+.image-container {
+  text-align: center;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 200px; /* prevents layout shift while loading */
+  background-color: rgba(0,0,0,0.02);
+  border-radius: 12px;
+}
+
+#cat-image {
+  max-width: 100%;
+  max-height: 400px;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  border-radius: 12px;
+  box-shadow: var(--shadow);
+  transition: transform 0.2s;
+}
+
+#cat-image:hover {
+  transform: scale(1.02);
+}

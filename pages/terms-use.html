@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terms of Use · API Toolbox</title>
+
+    <!-- ======================== Favicon items====================================== -->
+  <link rel="icon" type="image/png" href="../assets/icons/favicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="image/svg+xml" href="../assets/icons/favicon.svg" />
+  <link rel="shortcut icon" href="../assets/icons/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="../assets/icons/apple-touch-icon.png" />
+  <meta name="apple-mobile-web-app-title" content="UtilityStack" />
+  <link rel="manifest" href="/site.webmanifest" />
+  <!-- =============================================================================== -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,600;14..32,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/animations.css">
+    <link rel="stylesheet" href="../css/media-queries.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container header-flex">
+            <div class="logo">
+                <a href="../index.html"><i class="fas fa-wave-square"></i>
+                    <span>UtilityStack</span></a>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropbtn">Features <i class="fas fa-chevron-down"></i></a>
+                        <div class="dropdown-content">
+                            <a href="weather.html"><i class="fas fa-cloud-sun"></i> Weather</a>
+                            <a href="cat.html"><i class="fas fa-cat"></i> Random Cat</a>
+                            <a href="dictionary.html"><i class="fas fa-book"></i> Dictionary</a>
+                            <a href="joke.html"><i class="fas fa-laugh"></i> Jokes</a>
+                            <a href="currency.html"><i class="fas fa-coins"></i> Currency</a>
+                            <a href="posts.html"><i class="fas fa-newspaper"></i> Fake Posts</a>
+                        </div>
+                    </li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="newsletter.html">Newsletter</a></li>
+                </ul>
+            </nav>
+            <div class="search-container">
+                <form id="search-form">
+                    <input type="text" id="search-input" placeholder="Search features or Wikipedia..."
+                        aria-label="Search">
+                    <select id="search-source">
+                        <option value="site">Site</option>
+                        <option value="wikipedia">Wikipedia</option>
+                    </select>
+                    <button type="submit"><i class="fas fa-search"></i></button>
+                </form>
+            </div>
+            <button id="theme-toggle" aria-label="Switch between dark and light mode">
+                <i class="fas fa-sun"></i><i class="fas fa-moon"></i>
+            </button>
+            <button class="mobile-menu-btn" id="mobile-menu-btn"><i class="fas fa-bars"></i></button>
+        </div>
+    </header>
+
+    <main class="feature-page">
+        <div class="container">
+            <div class="feature-header">
+                <h1><i class="fas fa-file-contract"></i> Terms of Use</h1>
+                <p>Last updated: March 2026</p>
+            </div>
+
+            <div class="feature-card">
+                <h2>1. Acceptance of Terms</h2>
+                <p>By accessing or using API Toolbox ("the Website"), you agree to be bound by these Terms of Use. If
+                    you do not agree, please do not use the Website.</p>
+
+                <h2>2. Description of Service</h2>
+                <p>The Website provides a front‑end interface to various third‑party APIs. We do not host or store any
+                    data; we simply facilitate requests to those APIs. We are not responsible for the content, accuracy,
+                    or availability of the underlying APIs.</p>
+
+                <h2>3. Use of APIs</h2>
+                <p>When you use the features on our site, your requests are sent directly to the respective third‑party
+                    services. You are subject to the terms and privacy policies of those services. We encourage you to
+                    review them:</p>
+                <ul>
+                    <li><a href="https://openweathermap.org/terms" target="_blank">OpenWeatherMap</a></li>
+                    <li><a href="https://thecatapi.com/privacy" target="_blank">The Cat API</a></li>
+                    <li><a href="https://dictionaryapi.dev/" target="_blank">Free Dictionary API</a></li>
+                    <li><a href="https://jokeapi.dev/" target="_blank">JokeAPI</a></li>
+                    <li><a href="https://www.exchangerate-api.com/terms" target="_blank">ExchangeRate-API</a></li>
+                    <li><a href="https://jsonplaceholder.typicode.com/" target="_blank">JSONPlaceholder</a></li>
+                </ul>
+
+                <h2>4. No Warranties</h2>
+                <p>The Website is provided "as is" without any warranties, express or implied. We do not guarantee
+                    uninterrupted or error‑free operation.</p>
+
+                <h2>5. Limitation of Liability</h2>
+                <p>To the fullest extent permitted by law, API Toolbox shall not be liable for any damages arising out
+                    of your use or inability to use the Website.</p>
+
+                <h2>6. Changes to Terms</h2>
+                <p>We may revise these terms from time to time. Continued use of the Website after changes constitutes
+                    acceptance of the new terms.</p>
+
+                <h2>7. Governing Law</h2>
+                <p>These terms are governed by the laws of [Your Country/State].</p>
+
+                <h2>8. Contact</h2>
+                <p>If you have questions, please <a href="contact.html">contact us</a>.</p>
+
+                <p class="policy-note"><i class="fas fa-info-circle"></i> This is a sample terms page for demonstration.
+                    Consult a legal professional for a binding agreement.</p>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <h3>API Toolbox</h3>
+                    <p>A curated collection of six free and fun APIs, wrapped in a modern glass interface. Built for
+                        learning and experimentation.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="weather.html">Weather</a></li>
+                        <li><a href="cat.html">Random Cat</a></li>
+                        <li><a href="dictionary.html">Dictionary</a></li>
+                        <li><a href="joke.html">Jokes</a></li>
+                        <li><a href="currency.html">Currency</a></li>
+                        <li><a href="posts.html">Fake Posts</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h3>Information</h3>
+                    <ul>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="newsletter.html">Newsletter</a></li>
+                        <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                        <li><a href="terms-use.html">Terms of Use</a></li>
+                    </ul>
+                </div>
+                <div class="footer-newsletter">
+                    <h3>Stay Updated</h3>
+                    <p>Subscribe to our newsletter for new tools and API tips.</p>
+                    <form id="footer-newsletter-form">
+                        <input type="email" placeholder="Your email address" required>
+                        <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2026 API Toolbox. All rights reserved. Built with <i class="fas fa-heart"
+                        style="color: #6D2411;"></i> using free APIs.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/config.js"></script>
+    <script src="../js/main.js"></script>
+</body>
+
+</html>
